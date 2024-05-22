@@ -11,16 +11,24 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
 
-    body{font-size: 15px;display: flex;  }
-    .violetaa{color:  hsl(277, 64%, 61%);}
-    .izquierda{background-color:hsl(268, 100%, 27%);} 
+    body{font-size: 15px;
+      display: flex;
+      }
 
-    .foto{opacity: 50%; height: 100%;width: 100%;}
+    .violetaa{color:  hsl(277, 64%, 61%);
+    }
 
+    .izquierda{background-color:hsl(268, 100%, 27%);
+    } 
+
+    .foto{opacity: 50%;
+       height: 100%;
+       width: 100%;
+      }
+      
     div{background-color: rgb(127, 0, 247);}
 
-
-    @media(min-width: 1440px){.total{width: 375px;display: flex;}} 
+    @media(max-width: 1440px){body{width: 875px;display: flex;flex-direction: column; } .izquierda{display: flex;flex-wrap: wrap; overflow:hidden ;}} 
 
     header{font-size: x-large; color: white; font-family: Inter;margin-left: 1cm;margin-right: 3cm;}
 
@@ -28,7 +36,7 @@
 
     section{display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: flex-end;  
     justify-content: space-around;
     flex-wrap: wrap; 
       font-size: xx-large;
