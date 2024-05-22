@@ -11,17 +11,10 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
 
-    body{
-      font-size: 15px;
-      display: flex;
-      }
-    .letras{
-      color:  hsl(277, 64%, 61%);
-    }
+    body{font-size: 15px;display: flex;}
+    .violetaa{color:  hsl(277, 64%, 61%);}
 
-    .foto{
-      opacity: 60%; 
-    }
+    .foto{opacity: 50%; border-radius: 8px; height: 100%; width: 100%;}
 
     div{
       background-color: rgb(127, 0, 247);
@@ -30,37 +23,70 @@
 
     @media(min-width: 1440px){.total{width: 375px;display: flex;}} 
 
-   .derecha{
-        display: flex;
-        justify-content: flex-end;
-     
+    header{font-size: x-large; color: white; font-family: Inter; margin: 50px;}
+
+    .izquierda{color: white; font-family: Lexend Deca; background-color:hsl(268, 100%, 27%); border-top-left-radius: 8px; border-bottom-left-radius: 8px;}
+    
+    p{
+      margin: 50px;
+      color: darkgray;
     }
-    .izquierda{
+    .letras{
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+    }
+
+    .letras2{
       display: flex;
     }
-    .numbers{
-      font-weight: bold;
-      font-size: 22px;
-      
+
+    .derecha{
+      border-top-right-radius: 8px; border-bottom-right-radius: 8px; overflow: hidden;
     }
+
+    section{display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-wrap: wrap;
+      font-size: xx-large;
+      margin: 50px;
+    }
+
+    .Num{font-weight: bold; display: flex; color: white; margin-left: -1cm;}
+
+    .letras3{
+      color: darkgray;
+      font-size: 20px;
+      margin-left: -1cm;
+    }
+
   </style>
 </head>
 <body>
 
-  <div class="izquierda">
-  <header>
-    <h1>Get <span class="letras">insights</span> that help your business grow.</h1>
-  </header>
-    <p>Discover the benefits of data analytics and make</p> 
-    <p>better decisions regarding revenue, customer</p>
-    <p>experience, and overall efficiency.</p>  
-    <p><span class="numbers">10k+</span> companies</p>
-    <p><span class="numbers">314</span> templates</p>
-    <p><span class="numbers"><b>12m+</b></span> queries</p>
-  </div>
+    <div class="izquierda">
 
-  <div class="derecha">
-    <img class="foto" src="Img/image-header-desktop.jpg">
-  </div>
+      <header>
+        <h1>Get <span class="violetaa">insights</span> that help <span class="letras2"> your business grow.</span></h1>
+      </header>
+
+    
+    <p class="letras"><span class="letras2">Discover the benefits of data analytics and make </span> <span class="letras2">better decisions regarding revenue, customer</span> experience, and overall efficiency.</p>  
+
+     <section>
+    <p><span class="Num">10k+</span> <span class="letras3">COMPANIES</span></p>
+    <p><span class="Num">314</span> <span class="letras3">TEMPLATES</span</p>
+    <p><span class="Num">12m+</span> <span class="letras3">QUERIES</span></p>
+  </section> 
+
+    </div>
+
+      <div class="derecha">
+        <img class="foto" src="Img/image-header-desktop.jpg">
+      </div>
+  
+    
   </body>
 </html>
