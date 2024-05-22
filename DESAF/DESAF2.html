@@ -24,20 +24,21 @@
 
     header{font-size: x-large; color: white; font-family: Inter;}
 
-    .izquierda{color: white; font-family: Lexend Deca;}
+    .izquierda{color: white; font-family: Lexend Deca ; overflow: hidden; border-top-left-radius: 30px;border-bottom-left-radius: 30px;}
 
     section{display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
       font-size: xx-large;
     }
-    .num{font-weight: bold}
+
+    .Num{font-size: xx-large;}
+.derecha{border-top-right-radius: 30px;border-bottom-right-radius: 30px;overflow: hidden;}
   </style>
 </head>
 <body>
-
     <div class="izquierda">
 
       <header>
@@ -48,9 +49,9 @@
     <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>  
 
      <section>
-    <p><span class="Num">10k+</span> companies</p>
-    <p><span class="Num">314</span> templates</p>
-    <p><span class="Num">12m+</span> queries</p>
+    <p class="num"><span class="Num">10k+</span> companies</p>
+    <p class="num"><span class="Num">314</span> templates</p>
+    <p class="num"><span class="Num">12m+</span> queries</p>
   </section> 
 
     </div>
@@ -59,6 +60,5 @@
         <img class="foto" src="Img/image-header-desktop.jpg">
       </div>
   
-    
   </body>
 </html>
